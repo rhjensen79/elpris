@@ -1,6 +1,5 @@
 import requests
 import json
-import time
 import datetime
 
 # Define Function
@@ -28,5 +27,5 @@ def GetPrice():
   return SpotPriceDKK
 
 
-# Run Function
-GetPrice()
+# Run Function Example
+print (GetPrice())
