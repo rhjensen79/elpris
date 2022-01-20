@@ -22,7 +22,7 @@ def GetPrice():
   response = requests.request("POST", url, headers=headers, data=payload)
 
   jsonObject = json.loads(response.text)
-  SpotPriceDKK = int(jsonObject['data']['elspotprices'][0]['SpotPriceDKK'])
+  SpotPriceDKK = int(jsonObject['data']['elspotprices'][0]['SpotPriceDKK'])/1000*3
 
   return SpotPriceDKK
 
